@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wedding of Moch Devi Pritama & Anisa Yunita Sari</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #ffffff;
+            color: #2c3e50;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        /* Header / Cover */
+        .cover {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), 
+                        url('https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .cover h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 300;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .cover h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 4rem;
+            font-style: italic;
+            border-top: 1px solid #2c3e50;
+            border-bottom: 1px solid #2c3e50;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+
+        /* Section Mempelai */
+        .section {
+            padding: 100px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .profile-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .profile-img {
+            width: 100%;
+            max-width: 300px;
+            height: 450px;
+            object-fit: cover;
+            filter: grayscale(40%);
+            transition: 0.5s;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        .profile-img:hover { filter: grayscale(0%); }
+
+        .name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            margin-top: 20px;
+        }
+
+        /* Info Acara */
+        .event-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2px;
+            background-color: #eee;
+            margin-top: 50px;
+        }
+
+        .event-box {
+            background-color: #fff;
+            padding: 60px 40px;
+        }
+
+        .date-circle {
+            width: 80px;
+            height: 80px;
+            border: 1px solid #2c3e50;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-weight: bold;
+        }
+
+        /* Button */
+        .btn-map {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 30px;
+            border: 1px solid #2c3e50;
+            color: #2c3e50;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            transition: 0.3s;
+        }
+
+        .btn-map:hover {
+            background: #2c3e50;
+            color: #fff;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .profile-container, .event-grid { grid-template-columns: 1fr; }
+            .cover h1 { font-size: 2.8rem; }
+            .profile-img { height: 350px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="cover">
+        <h2>The Wedding Invitation</h2>
+        <h1>Devi & Anisa</h1>
+        <p>SAVE THE DATE | 22.02.2026</p>
+    </header>
+
+    <section class="section">
+        <h2 style="font-family: 'Cormorant Garamond'; font-size: 2rem;">Salam Hangat</h2>
+        <p style="max-width: 600px; margin: 20px auto;">Kami mengundang Bapak/Ibu/Saudara/i untuk merayakan penyatuan cinta kami.</p>
+
+        <div class="profile-container">
+            <div>
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400" class="profile-img" alt="Pria">
+                <h3 class="name">Moch Devi Pritama</h3>
+                <p>Putra Pertama dari Keluarga Bpk. Opik & Ibu Endah Mulya Sari</p>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400" class="profile-img" alt="Wanita">
+                <h3 class="name">Anisa Yunita Sari</h3>
+                <p>Putri Terakhir dari Keluarga Bpk. Rozak & Ibu Suliati</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="event-grid">
+        <div class="event-box">
+            <div class="date-circle">22.02</div>
+            <h2 style="font-family: 'Cormorant Garamond';">The Ceremony</h2>
+            <p>Pukul 09.00 WIB</p>
+            <p>Kediaman Mempelai Wanita</p>
+            <p>Jl. Senopati No. 45, Jakarta</p>
+        </div>
+        <div class="event-box">
+            <div class="date-circle">22.02</div>
+            <h2 style="font-family: 'Cormorant Garamond';">The Celebration</h2>
+            <p>Pukul 12.00 - 15.00 WIB</p>
+            <p>Grand Ballroom Hotel Mulia</p>
+            <p>Senayan, Jakarta Pusat</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 style="font-family: 'Cormorant Garamond';">Lokasi Acara</h2>
+        <div style="margin-top: 30px;">
+            <div style="width:100%; height:300px; background:#f0f0f0; display:flex; align-items:center; justify-content:center; color:#888; border:1px solid #ddd;">
+                [ Google Maps Area ]
+            </div>
+        </div>
+        <a href="https://maps.google.com" target="_blank" class="btn-map">Petunjuk Jalan</a>
+    </section>
+
+    <footer style="padding: 100px 20px; text-align: center; background: #fdfdfd; border-top: 1px solid #eee;">
+        <h1 style="font-family: 'Cormorant Garamond'; font-style: italic;">D & A</h1>
+        <p style="font-size: 0.8rem; letter-spacing: 2px; margin-top: 10px;">#DeviAnisaStory</p>
+    </footer>
+
+</body>
+</html>
